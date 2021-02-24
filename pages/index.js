@@ -22,7 +22,7 @@ export async function getStaticProps(context) {
     .limit(LIMIT);
   const trades = (await tradesQuery.get()).docs.map(tradeToJSON);
 
-  const stateRef = firestore.collection("state").doc("state");
+  const stateRef = firestore.collection("state").doc("current");
   const state = stateToJSON(await stateRef.get());
 
 
