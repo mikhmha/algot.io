@@ -167,18 +167,6 @@ button.btn-logo {
   padding: 0.5rem 1rem;
 }
 
-.tradeFeed {
-  display: grid;
-  grid-template-columns:repeat(5, 1fr);
-  grid-column-gap: 5em;
-  grid-row-gap: 0px;
-
-  align-items: center;
-
-  max-width: 800px;
-  margin-top: 3rem;
-
-}
 /* Cards */
 
 .card {
