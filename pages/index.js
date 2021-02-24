@@ -89,8 +89,8 @@ export default function Home(props) {
           <h3> asset </h3>
           <h3>current value </h3>
           <h3>start of day value </h3>
-          <AssetValue currency = {"USDT"} value = {props.state.balance} sod = {10000}/>
-          <AssetValue currency = {"ETH"} value = {props.state.quantity} sod = {0}/>
+          <AssetValue currency = {"USDT"} value = {state.balance} sod = {10000}/>
+          <AssetValue currency = {"ETH"} value = {state.quantity} sod = {0}/>
         </div>
 
 
