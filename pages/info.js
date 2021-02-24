@@ -11,7 +11,8 @@ export default function Info() {
         </Head>
 
         <p className={styles.description}>
-            
+        FIXING VIEW FOR MOBILE
+        ADDING STRATEGY DATA
         </p>
 
 
