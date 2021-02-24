@@ -62,11 +62,6 @@ function useSSRDoc(ref, options) {
 
 export default function Home(props) {
 
-
-  const [loading, setLoading] = useState(false);
-  const [tradesEnd, setTradesEnd] = useState(false);
-
-
   const tradesRef =  firestore.collectionGroup('trades').orderBy('fillTime', 'desc').limit(LIMIT);
   const [trades] = useSSRCollection(tradesRef, { startWith: props.trades});
 
