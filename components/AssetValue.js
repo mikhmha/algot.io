@@ -1,5 +1,4 @@
 
-import styles from '../styles/Home.module.css'
 import { Fragment} from 'react';
 export default function  AssetValue({ currency, value, sod }) {
     return (
