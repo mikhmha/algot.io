@@ -1,11 +1,12 @@
 import TradeFeed from '../components/TradeFeed'
 import AssetValue from '../components/AssetValue'
 import AlgoStatus from '../components/AlgoStatus';
+import UserPoll from '../components/UserPoll'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { firestore, tradeToJSON, stateToJSON } from '../lib/firebase';
 import { useDocumentData, useCollection, useCollectionData } from 'react-firebase-hooks/firestore';
-import { useState } from 'react';
+
 
 
 
@@ -107,11 +108,7 @@ export default function Home(props) {
           <AssetValue currency = {"ETH"} value = {state.quantity} sod = {"0.0000"}/>
         </div>
 
-
-
-
       <div className={styles.header}><h1>Strategy</h1></div>
-
         <div className={styles.strategyGrid}>
           <h3> buy limit (USDT) </h3>
           <h3> sell limit (USDT) </h3>
@@ -123,12 +120,13 @@ export default function Home(props) {
 
 
 
-        <div className={styles.header}><h1>Strategy Poll (testing) </h1></div>
-          <div> participate in a poll. results are used to influence the algorithim in real-time. </div>
-           polls are generated automatically during periods of inactivity
+      <div className={styles.header}><h1>Strategy Poll (testing) </h1></div>
+        <div> participate in a poll. results are used to influence the algorithim in real-time. </div>
+          polls are generated automatically during periods of inactivity
+           <UserPoll />
 
       <div className={styles.header}><h1>Analysis (testing)</h1></div>
-          <div> the analysis engine is used to determine new buy and sell limits to enter at </div>
+          <div>  </div>
        
 
 

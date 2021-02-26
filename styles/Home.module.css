@@ -131,7 +131,13 @@
 
 }
 
+.card {
+  align-items: center;
+  margin: 1rem 0;
 
+  border: 1px solid var(--color-gray);
+
+}
 
 
 .tradeFeed {
@@ -146,6 +152,15 @@
   width: 100%;
   margin-top: 0.0rem;
 }
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 
 
 
