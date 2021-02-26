@@ -121,7 +121,7 @@ export default function Home(props) {
 
 
       <div className={styles.header}><h1>Strategy Poll (testing) </h1></div>
-        <div> participate in a poll. results are used to influence the algorithim in real-time. </div>
+        <div> participate in a poll. results are used to influence the algorithm in real-time. </div>
           polls are generated automatically during periods of inactivity
            <UserPoll />
 
