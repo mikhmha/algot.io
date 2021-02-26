@@ -134,11 +134,11 @@ export default function Home(props) {
       <div className={styles.header}><h1>Live Trade Feed</h1></div>
         <i>last 20 trades</i>
         <div className={styles.tradeFeed}>
-          <h3>type</h3>
-          <h3>price (USDT)</h3>
-          <h3>quantity (ETH)</h3>
-          <h3>total (USDT)</h3>
-          <h3>fill time</h3>
+          <h4>type</h4>
+          <h4>price (USDT)</h4>
+          <h4>quantity (ETH)</h4>
+          <h4>total (USDT)</h4>
+          <h4>fill time</h4>
           <TradeFeed trade={trades} />
         </div>
     </div>
