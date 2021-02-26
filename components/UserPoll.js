@@ -35,13 +35,13 @@ export default function UserPoll({ question, expiry }) {
     return (
       <div className={styles.card}>
           <h3  style={{ margin:"0em" }}>🚨 new user poll 🚨</h3>
-          {submitting && <div> Submitting .. </div>}
+          {submitting && <div> submitting .. </div>}
             <form onSubmit ={handleSubmit}>
                 <fieldset>
                     <label style={{ padding:"1em" }}>suggest a new sell limit</label>
                     <input style={{ width:"50%" }} id="poll-question" onChange={handleChange}></input>
                 </fieldset>
-                <button className={styles.btn} onClick={handleSubmit}>Submit</button>
+                <button className={styles.btn} onClick={handleSubmit}>submit</button>
             </form>
             <p>starts @ 02/25/2020 11:00pm MST</p>
             <p>expires: ???</p>
