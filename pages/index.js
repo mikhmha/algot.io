@@ -81,7 +81,7 @@ export default function Home(props) {
   }
 
   var status_msg = getCurStatus();
-  console.log(status_msg);
+
 
 
     
@@ -89,10 +89,13 @@ export default function Home(props) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>algot.io</title>
+        <title>algot.io - user driven HFT</title>
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <h3>hft client connection status</h3>
+        <div style ={{color: 'green'}}> online </div>
 
 
       <div className={styles.header}><h1>Wallet</h1></div>
@@ -105,17 +108,30 @@ export default function Home(props) {
         </div>
 
 
-      <div className={styles.header}><h1>Status</h1></div>
-        <div className={styles.statusGrid}>
+
+
+      <div className={styles.header}><h1>Strategy</h1></div>
+
+        <div className={styles.strategyGrid}>
           <h3> buy limit (USDT) </h3>
           <h3> sell limit (USDT) </h3>
-          <h3>current strategy </h3>
+          <h3> current status </h3>
+          <h3> type </h3>
+          <h3> user polling </h3>
           <AlgoStatus state = {state} status_msg = {status_msg}/>
         </div>
 
-        <div className={styles.header}><h1>Strategy Poll</h1></div>
-          <p> participate in a poll. results are used to influence the algorithim in real-time. </p>
+
+
+        <div className={styles.header}><h1>Strategy Poll (testing) </h1></div>
+          <div> participate in a poll. results are used to influence the algorithim in real-time. </div>
            polls are generated automatically during periods of inactivity
+
+      <div className={styles.header}><h1>Analysis (testing)</h1></div>
+          <div> the analysis engine is used to determine new buy and sell limits to enter at </div>
+       
+
+
 
       <div className={styles.header}><h1>Live Trade Feed</h1></div>
         <i>last 20 trades</i>

@@ -118,10 +118,10 @@
   text-align: center;
 }
 
-.statusGrid {
+.strategyGrid {
   display: grid;
-  grid-template-columns:repeat(3, 1fr);
-  grid-column-gap: 5em;
+  grid-template-columns:repeat(5, 1fr);
+  grid-column-gap: 1em;
   grid-row-gap: 0px;
 
 
