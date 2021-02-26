@@ -95,7 +95,7 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h3>hft client connection status</h3>
+      <div><h3>hft client connection status</h3></div>
         <div style ={{color: 'green'}}> online </div>
 
 
@@ -103,18 +103,18 @@ export default function Home(props) {
       <div className={styles.assetGrid}>
           <h3> asset </h3>
           <h3>current value </h3>
-          <h3>start of day value </h3>
+          <h3>start of day </h3>
           <AssetValue currency = {"USDT"} value = {state.balance} sod = {"10000.0000"}/>
           <AssetValue currency = {"ETH"} value = {state.quantity} sod = {"0.0000"}/>
-        </div>
+      </div>
 
       <div className={styles.header}><h1>Strategy</h1></div>
         <div className={styles.strategyGrid}>
-          <h3> buy limit (USDT) </h3>
-          <h3> sell limit (USDT) </h3>
-          <h3> current status </h3>
-          <h3> type </h3>
-          <h3> user polling </h3>
+          <h4>buy limit (USDT)</h4>
+          <h4>sell limit (USDT)</h4>
+          <h4>current status</h4>
+          <h4>type</h4>
+          <h4>user polling</h4>
           <AlgoStatus state = {state} status_msg = {status_msg}/>
         </div>
 
