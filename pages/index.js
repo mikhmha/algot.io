@@ -96,7 +96,7 @@ export default function Home(props) {
       </Head>
 
       <div><h3>hft client connection status</h3></div>
-        <div style ={{color: 'green'}}> online </div>
+        <div style ={{color: 'red'}}> offline - maintenance </div>
 
 
       <div className={styles.header}><h1>Wallet</h1></div>
