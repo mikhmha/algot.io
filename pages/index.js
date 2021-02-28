@@ -96,7 +96,7 @@ export default function Home(props) {
       </Head>
 
       <div><h3>hft client connection status</h3></div>
-        <div style ={{color: 'red'}}> offline - maintenance </div>
+        <div style ={{color: 'green'}}> online - testing </div>
 
 
       <div className={styles.header}><h1>Wallet</h1></div>
@@ -120,14 +120,6 @@ export default function Home(props) {
 
 
 
-      <div className={styles.header}><h1>Strategy Poll (testing) </h1></div>
-        <div> participate in a poll. results are used to influence the algorithm in real-time. </div>
-          polls are generated automatically during periods of inactivity
-           <UserPoll />
-
-      <div className={styles.header}><h1>Analysis (testing)</h1></div>
-          <div>  </div>
-       
 
 
 
