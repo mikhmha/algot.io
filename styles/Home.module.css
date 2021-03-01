@@ -7,6 +7,7 @@
   align-items: center;
 
   margin: auto;
+  padding: 1.5em;
   width: 100%;
 
   text-align: center;
@@ -154,7 +155,7 @@
 
   display: grid;
   grid-template-columns:repeat(5, 1fr);
-  grid-column-gap: 1em;
+  grid-column-gap: auto;
   grid-row-gap: 0px;
 
   align-items: center;

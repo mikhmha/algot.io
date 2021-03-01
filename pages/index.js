@@ -117,7 +117,7 @@ export default function Home(props) {
           <h4>user polling</h4>
           <AlgoStatus state = {state} status_msg = {status_msg}/>
         </div>
-      <p>help the algorithm find new buy and sell limits by voting at:</p>
+      <p>help the algorithm find new buy and sell limits by voting at</p>
       <a href="https://www.twitch.tv/algottwitch">twitch.tv/algottwitch</a>
 
 
