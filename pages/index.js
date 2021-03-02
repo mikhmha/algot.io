@@ -1,7 +1,8 @@
 import TradeFeed from '../components/TradeFeed'
 import AssetValue from '../components/AssetValue'
-import AlgoStatus from '../components/AlgoStatus';
-import UserPoll from '../components/UserPoll'
+import AlgoStatus from '../components/AlgoStatus'
+import ConStatus from '../components/ConStatus'
+
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { firestore, tradeToJSON, stateToJSON } from '../lib/firebase';
@@ -70,7 +71,6 @@ export default function Home(props) {
   const [state] = useSSRDoc(stateRef, { startWith: props.state});
 
 
-
   function getCurStatus() {
     var msg = "";
 
@@ -91,12 +91,10 @@ export default function Home(props) {
     <div className={styles.container}>
       <Head>
         <title>algot.io - user driven HFT</title>
-
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div><h3>hft client connection status</h3></div>
-        <div style ={{color: 'red'}}> offline - maintainence </div>
+      <ConStatus status = {state.constatus} />
 
 
       <div className={styles.header}><h1>Wallet</h1></div>
@@ -113,12 +111,16 @@ export default function Home(props) {
           <h4>buy limit (USDT)</h4>
           <h4>sell limit (USDT)</h4>
           <h4>current status</h4>
-          <h4>type</h4>
+          <h4>type</h4
+          >
           <h4>user polling</h4>
           <AlgoStatus state = {state} status_msg = {status_msg}/>
         </div>
+      <strong>last trade</strong>
+      <p>{ new Date(state.updatedAt.seconds * 1000).toLocaleString("en-US")}</p>
       <p>help the algorithm find new buy and sell limits by voting at</p>
       <a href="https://www.twitch.tv/algottwitch">twitch.tv/algottwitch</a>
+
 
 
 
