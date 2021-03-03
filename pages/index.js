@@ -82,7 +82,7 @@ export default function Home(props) {
   }
 
   //var status_msg = getCurStatus();
-  const status_msg = "mark"
+  const status_msg = "----"
 
 
     
@@ -108,8 +108,8 @@ export default function Home(props) {
 
       <div className={styles.header}><h1>Strategy</h1></div>
         <div className={styles.strategyGrid}>
-          <h4>buy limit (USDT)</h4>
-          <h4>sell limit (USDT)</h4>
+          <h4>current bid (USDT)</h4>
+          <h4>current ask (USDT)</h4>
           <h4>current status</h4>
           <h4>type</h4>
           <h4>user polling</h4>
