@@ -155,13 +155,13 @@
 
   display: grid;
   grid-template-columns:repeat(5, 1fr);
-  grid-column-gap: auto;
+  column-gap: 1em;
   grid-row-gap: 0px;
 
   align-items: center;
   text-align: center;
   max-width: 100%;
-  margin-top: 0.0rem;
+
 }
 
 .vertical-center {

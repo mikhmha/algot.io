@@ -81,8 +81,8 @@ export default function Home(props) {
 
   }
 
-  var status_msg = getCurStatus();
-
+  //var status_msg = getCurStatus();
+  const status_msg = "mark"
 
 
     
@@ -111,8 +111,7 @@ export default function Home(props) {
           <h4>buy limit (USDT)</h4>
           <h4>sell limit (USDT)</h4>
           <h4>current status</h4>
-          <h4>type</h4
-          >
+          <h4>type</h4>
           <h4>user polling</h4>
           <AlgoStatus state = {state} status_msg = {status_msg}/>
         </div>
