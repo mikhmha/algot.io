@@ -11,7 +11,7 @@ export default function  ConStatus({status}) {
           case '1':
             return  <div style ={{color: "green"}}>  {"online - trading"} </div>;
           case '2':
-            return  <div style ={{color: "yellow"}}>  {"online - testing"} </div>;
+            return  <div style ={{color: "orange"}}>  {"online - testing"} </div>;
           default:
             return null;
         }
