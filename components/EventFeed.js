@@ -8,20 +8,22 @@ function PostEvent({ event }) {
 
     return (
       <Fragment>
-        <div style ={{color: 'brown'}}>inactivity</div> 
-        <div>set cur bid/ask to market </div> 
+        <span style ={{color: 'brown'}}>rt-analysis</span> 
+        <span>nb: {event.newbid} {"   "} na: {event.newask} </span>
+        
+        
         {(() => {
               switch (event.status) 
               {
                 case '0':
-                  return  <div style ={{color: "red"}}>  {"reject"} </div>;
+                  return  <span style ={{color: "red"}}>  {"reject"} </span>;
                 case '1':
-                  return  <div style ={{color: "green"}}>  {"execute"} </div>;
+                  return  <span style ={{color: "green"}}>  {"execute"} </span>;
                 default:
                   return null;
                }
         })()}
-        <div>{new Date(event.processedAt.seconds * 1000).toLocaleString("en-US")} </div> 
+        <span>{new Date(event.processedAt.seconds * 1000).toLocaleString("en-US")} </span> 
       </Fragment>
   
  
