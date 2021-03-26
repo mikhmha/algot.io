@@ -138,7 +138,7 @@ export default function Home(props) {
         <span style ={{color: 'red'}}>rejected</span>  
       </div>
       <div>
-        <span style ={{color: 'brown'}}>rt-analysis - use real-time market data to calculate current best bid and ask</span>  
+        <span style ={{color: 'brown'}}>rt-analysis - analyze real-time market data to predict current optimal  bid and ask</span>  
       </div>
 
       <div className={styles.eventFeed}>
