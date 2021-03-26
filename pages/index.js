@@ -133,11 +133,15 @@ export default function Home(props) {
       
       <div className={styles.header}><h1>Event Feed</h1></div>
       <i>last 5 events</i>
-      <i>*events are generated dynamically</i>
+      <div>
+        <span style ={{color: 'green'}}>executed {"  "}</span>
+        <span style ={{color: 'red'}}>rejected</span>  
+      </div>
+
       <div className={styles.eventFeed}>
         <h4>cause</h4>
-        <h4>action</h4>
-        <h4>decision</h4>
+        <h4>bid update</h4>
+        <h4>ask update</h4>
         <h4>time</h4>
         <EventFeed event = {events} />
       </div>
