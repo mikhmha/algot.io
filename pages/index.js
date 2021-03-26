@@ -137,6 +137,9 @@ export default function Home(props) {
         <span style ={{color: 'green'}}>executed {"  "}</span>
         <span style ={{color: 'red'}}>rejected</span>  
       </div>
+      <div>
+        <span style ={{color: 'brown'}}>rt-analysis - use real-time market data to calculate current best bid and ask</span>  
+      </div>
 
       <div className={styles.eventFeed}>
         <h4>cause</h4>
