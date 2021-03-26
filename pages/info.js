@@ -15,14 +15,12 @@ export default function Info() {
           The algorithm runs on my local machine while also logging transactions asynchronously to the cloud. <br></br>
           This website is currently testing so you may see data feeds being wiped occasionally. <br></br><br></br>
  
-          The assets being traded are simulated but they are traded on real real-time data. <br></br><br></br>
           
           Only cryptocurrencies are "traded" right now due to the high cost of obtaining real-time stock data. <br>
           </br>The development framework is pretty flexible so it can be pointed to a variety of crypto data feeds.<br></br> 
           If theres a cryptocurrency you would like to see traded send a suggestion! 
           Maybe we can try trading it for a few days.<br></br><br></br>
 
-          Exchange fees are currently not factored into the decision to make trades. Displayed results not accurate. <br></br><br></br>
 
 
   
