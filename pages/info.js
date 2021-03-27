@@ -17,8 +17,6 @@ export default function Info() {
 
           In order to meet the low latency requirements of high-frequency trading, the C++ trading client utilizes
           several performance oriented C++ libraries and optimization tricks to acheive ultra low latency for networking, data processing, and IPC. <br></br>
-          Additionally, some linux kernel level optimizations are also utilized (currently testing). <br></br>
-          The current implementation is built around an inherent latency period that can scale based on the chosen hardware. FPGA..(soon TM)
           <br></br><br></br>
           
           Only cryptocurrencies are "traded" right now due to the high cost of obtaining real-time stock data. <br>
