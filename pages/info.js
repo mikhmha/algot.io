@@ -14,7 +14,12 @@ export default function Info() {
           This website provides live visualization of a high-frequency-trading algorithm I wrote in C++. <br></br>
           The algorithm runs on my local machine while also logging transactions asynchronously to the cloud. <br></br>
           This website is currently testing so you may see data feeds being wiped occasionally. <br></br><br></br>
- 
+
+          In order to meet the low latency requirements of high-frequency trading, the C++ trading client utilizes
+          several performance oriented C++ libraries and optimization tricks to acheive ultra low latency for networking, data processing, and IPC. <br></br>
+          Additionally, some linux kernel level optimizations are also utilized (currently testing). <br></br>
+          The current implementation is built around an inherent latency period that can scale based on the chosen hardware. FPGA..(soon TM)
+          <br></br><br></br>
           
           Only cryptocurrencies are "traded" right now due to the high cost of obtaining real-time stock data. <br>
           </br>The development framework is pretty flexible so it can be pointed to a variety of crypto data feeds.<br></br> 
