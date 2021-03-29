@@ -137,6 +137,11 @@ export default function Home(props) {
         <h4>user polling</h4>
         <AlgoStatus state = {state}/>
       </div>
+
+      <div className={styles.header}><h1>24Hr Rolling Graph</h1></div>
+        <i>updates every 30 mins</i>
+      <span>testing..</span>
+      <Graph data ={hourly}/>
       
       <div className={styles.header}><h1>Event Feed</h1></div>
       <i>last 5 events</i>
@@ -147,12 +152,6 @@ export default function Home(props) {
       <div>
         <span style ={{color: 'brown'}}>rt-analysis - analyze real-time market data to predict current optimal  bid and ask</span>  
       </div>
-
-      <div className={styles.header}><h1>24Hr Rolling Graph</h1></div>
-        <i>updates every 30 mins</i>
-      <span>testing..</span>
-      <Graph data ={hourly}/>
-
       <div className={styles.eventFeed}>
         <h4>cause</h4>
         <h4>bid update</h4>
