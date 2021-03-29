@@ -117,6 +117,7 @@ export default function Home(props) {
       </Head>
 
       <ConStatus status = {state.constatus} />
+      <span><br></br>online since: March 25 00:00 MST</span>
 
 
       <div className={styles.header}><h1>Wallet</h1></div>
