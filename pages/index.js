@@ -128,6 +128,11 @@ export default function Home(props) {
           <AssetValue currency = {"ETH"} value = {state.quantity} sod = {"0.0000"}/>
       </div>
 
+      <div className={styles.header}><h1>24Hr Rolling Graph</h1></div>
+        <i>updates every 30 mins</i>
+      <span>testing..</span>
+      <Graph data ={hourly}/>
+
       <div className={styles.header}><h1>Strategy</h1></div>
       <div className={styles.strategyGrid}>
         <h4>current bid (USDT)</h4>
@@ -138,10 +143,7 @@ export default function Home(props) {
         <AlgoStatus state = {state}/>
       </div>
 
-      <div className={styles.header}><h1>24Hr Rolling Graph</h1></div>
-        <i>updates every 30 mins</i>
-      <span>testing..</span>
-      <Graph data ={hourly}/>
+
       
       <div className={styles.header}><h1>Event Feed</h1></div>
       <i>last 5 events</i>
