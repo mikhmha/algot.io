@@ -3,10 +3,10 @@ import EventFeed from '../components/EventFeed'
 import AssetValue from '../components/AssetValue'
 import AlgoStatus from '../components/AlgoStatus'
 import ConStatus from '../components/ConStatus'
-
+import Graph from '../components/HourlyGraph'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { firestore, tradeToJSON, eventToJSON, stateToJSON } from '../lib/firebase';
+import { firestore, tradeToJSON, eventToJSON, stateToJSON, hourlyToJSON } from '../lib/firebase';
 import { useDocumentData, useCollection, useCollectionData } from 'react-firebase-hooks/firestore';
 
 
@@ -16,7 +16,7 @@ import { useDocumentData, useCollection, useCollectionData } from 'react-firebas
 
 const trades_LIMIT = 20;
 const events_LIMIT = 5;
-
+const hourly_LIMIT = 24;
 
 export async function getStaticProps(context) {
 
@@ -37,9 +37,15 @@ export async function getStaticProps(context) {
     .limit(events_LIMIT);
   const events = (await eventsQuery.get()).docs.map(eventToJSON);
 
+  const hourlyQuery = firestore
+  .collectionGroup('hourly')
+  .orderBy('createdAt', 'desc')
+  .limit(trades_LIMIT);
+  const hourly = (await hourlyQuery.get()).docs.map(hourlyToJSON);
+
 
   return {
-    props: {state, trades, events}, // will be passed to the page component as props
+    props: {state, trades, events, hourly}, // will be passed to the page component as props
   };
 
 }
@@ -80,10 +86,11 @@ export default function Home(props) {
   const tradesRef =  firestore.collectionGroup('trades').orderBy('fillTime', 'desc').limit(trades_LIMIT);
   const [trades] = useSSRCollection(tradesRef, { startWith: props.trades});
 
-
-
   const eventsRef = firestore.collectionGroup('events').orderBy('processedAt', 'desc').limit(events_LIMIT);
   const [events] = useSSRCollection(eventsRef, { startWith: props.events});
+
+  const hourlyRef =  firestore.collectionGroup('hourly').orderBy('createdAt', 'desc').limit(hourly_LIMIT);
+  const [hourly] = useSSRCollection(hourlyRef, { startWith: props.hourly});
 
 /*
   function getCurStatus() {
@@ -148,6 +155,12 @@ export default function Home(props) {
         <h4>time</h4>
         <EventFeed event = {events} />
       </div>
+
+
+      <div className={styles.header}><h1>24Hr Rolling Graph</h1></div>
+        <i>updates every 30 mins</i>
+      <span>testing..</span>
+      <Graph data ={hourly}/>
 
 
       <div className={styles.header}><h1>Trade Feed</h1></div>
