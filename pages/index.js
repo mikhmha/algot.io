@@ -148,6 +148,11 @@ export default function Home(props) {
         <span style ={{color: 'brown'}}>rt-analysis - analyze real-time market data to predict current optimal  bid and ask</span>  
       </div>
 
+      <div className={styles.header}><h1>24Hr Rolling Graph</h1></div>
+        <i>updates every 30 mins</i>
+      <span>testing..</span>
+      <Graph data ={hourly}/>
+
       <div className={styles.eventFeed}>
         <h4>cause</h4>
         <h4>bid update</h4>
@@ -155,12 +160,6 @@ export default function Home(props) {
         <h4>time</h4>
         <EventFeed event = {events} />
       </div>
-
-
-      <div className={styles.header}><h1>24Hr Rolling Graph</h1></div>
-        <i>updates every 30 mins</i>
-      <span>testing..</span>
-      <Graph data ={hourly}/>
 
 
       <div className={styles.header}><h1>Trade Feed</h1></div>
