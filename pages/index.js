@@ -129,7 +129,7 @@ export default function Home(props) {
           <AssetValue currency = {"ETH"} value = {state.quantity} sod = {"0.0000"}/>
       </div>
 
-      <div className={styles.header}><h1>24Hr Rolling Graph</h1></div>
+      <div className={styles.header}><h1>Hourly Profit Graph</h1></div>
         <i>updates every 30 mins</i>
       <span>testing..</span>
       <Graph data ={hourly}/>
