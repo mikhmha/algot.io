@@ -117,14 +117,14 @@ export default function Home(props) {
       </Head>
 
       <ConStatus status = {state.constatus} />
-      <span><br></br>online since: March 25 00:00 MST</span>
+      <span><br></br>online since: March 25 2021 00:00 MST</span>
 
 
       <div className={styles.header}><h1>Wallet</h1></div>
       <div className={styles.assetGrid}>
           <h3> asset </h3>
           <h3>current value </h3>
-          <h3>start of day </h3>
+          <h3>start of period </h3>
           <AssetValue currency = {"USDT"} value = {state.balance} sod = {"10000.0000"}/>
           <AssetValue currency = {"ETH"} value = {state.quantity} sod = {"0.0000"}/>
       </div>
