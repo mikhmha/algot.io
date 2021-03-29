@@ -23,7 +23,7 @@ const formatDate = (tickItem) => {
       <BarChart
         width={500}
         height={300}
-        data={data.reverse()}
+        data={data}
         barCategoryGap={1}
 
 
@@ -35,7 +35,7 @@ const formatDate = (tickItem) => {
         }}
       >
         <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="eztime" tickFormatter={formatDate} padding={{ left: 0, right: 0 }} />
+        <XAxis dataKey="eztime" tickFormatter={formatDate} padding={{ left: 0, right: 0 }} reversed={true}/>
         <YAxis />
         <Tooltip />
 
