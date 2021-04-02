@@ -17,12 +17,15 @@ export default function Info() {
 
           In order to meet the low latency requirements of high-frequency trading, the C++ trading client utilizes
           several performance oriented C++ libraries and optimization tricks to acheive ultra low latency for networking, data processing, and IPC. <br></br>
+
           <br></br><br></br>
           
           Only cryptocurrencies are "traded" right now due to the high cost of obtaining real-time stock data. <br>
           </br>The development framework is pretty flexible so it can be pointed to a variety of crypto data feeds.<br></br> 
           If theres a cryptocurrency you would like to see traded send a suggestion! 
           Maybe we can try trading it for a few days.<br></br><br></br>
+
+          crypto trading fee = VIP market maker price + pay with exchange coin  <br></br><br></br> 
 
 
 
