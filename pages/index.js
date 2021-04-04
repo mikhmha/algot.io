@@ -37,6 +37,7 @@ export async function getStaticProps(context) {
     .limit(events_LIMIT);
   const events = (await eventsQuery.get()).docs.map(eventToJSON);
 
+  
   const hourlyQuery = firestore
   .collectionGroup('hourly')
   .orderBy('createdAt', 'desc')
@@ -46,6 +47,7 @@ export async function getStaticProps(context) {
 
   return {
     props: {state, trades, events, hourly}, // will be passed to the page component as props
+    //props: {state, trades, events}, // will be passed to the page component as props
   };
 
 }
@@ -139,7 +141,6 @@ export default function Home(props) {
         <h4>current bid (USDT)</h4>
         <h4>current ask (USDT)</h4>
         <h4>last trade</h4>
-        <h4>type</h4>
         <h4>user polling</h4>
         <AlgoStatus state = {state}/>
       </div>
