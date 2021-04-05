@@ -94,23 +94,7 @@ export default function Home(props) {
   const hourlyRef =  firestore.collectionGroup('hourly').orderBy('createdAt', 'desc').limit(hourly_LIMIT);
   const [hourly] = useSSRCollection(hourlyRef, { startWith: props.hourly});
 
-/*
-  function getCurStatus() {
-    var msg = "";
-
-    msg += (state.buystate === "1") ? "to buy ETH @ <= limit " : "";
-    msg += (state.sellstate === "1") ? "to sell ETH@ => limit " : "";
-
-    return msg;
-
-  }
-
-  var status_msg = getCurStatus();
-  const status_msg = "----"
-*/
-
     
-
   return (
     <div className={styles.container}>
       <Head>
@@ -119,7 +103,7 @@ export default function Home(props) {
       </Head>
 
       <ConStatus status = {state.constatus} />
-      <span><br></br>period start: April 4 2021 00:00 MST</span>
+      <span><br></br>period start: April 4 2021 11:00:00 MST</span>
 
 
       <div className={styles.header}><h1>Wallet</h1></div>
@@ -137,6 +121,10 @@ export default function Home(props) {
       <Graph data ={hourly}/>
 
       <div className={styles.header}><h1>Strategy</h1></div>
+      <div>
+        <span style ={{color: 'green'}}>active {"  "}</span>
+        <span style ={{color: 'red'}}>expired</span>  
+      </div>
       <div className={styles.strategyGrid}>
         <h4>current bid (USDT)</h4>
         <h4>current ask (USDT)</h4>
