@@ -103,7 +103,7 @@ export default function Home(props) {
       </Head>
 
       <ConStatus status = {state.constatus} />
-      <span><br></br>period start: April 4 2021 11:00:00 MST</span>
+      <span><br></br>period start: April 7 2021 18:00 MST</span>
 
 
       <div className={styles.header}><h1>Wallet</h1></div>
