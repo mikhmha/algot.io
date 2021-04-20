@@ -15,8 +15,7 @@ export default function Info() {
           The algorithm runs on my local machine while also logging transactions asynchronously to the cloud. <br></br>
           This website is currently testing so you may see data feeds being wiped occasionally. <br></br><br></br>
 
-          In order to meet the low latency requirements of high-frequency trading, the C++ trading client utilizes
-          several performance oriented C++ libraries and optimization tricks to acheive ultra low latency for networking, data processing, and IPC. <br></br>
+
 
           <br></br><br></br>
           
