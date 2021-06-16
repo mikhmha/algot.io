@@ -37,10 +37,10 @@ export default function Info() {
 
 
           new stuff coming:
-          <br>24/7 uptime</br>
-          <br>multi currency trading</br>
-          <br>more historical data + live analytics</br>
-          <br>improved trading strategy</br>
+          <br></br>24/7 uptime
+          <br></br>multi currency trading
+          <br></br>more historical data + live analytics
+          <br></br>improved trading strategy
 
 
         </p>
