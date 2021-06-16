@@ -105,7 +105,7 @@ export default function Home(props) {
       <ConStatus status = {state.constatus} />
       <span><br></br>next period start: whenever</span>
       <span><br></br>testing new backend stuff</span>
-      <span><br></br>cool stuff coming...</span>
+      <span><br></br>Check Info!</span>
       <div className={styles.header}><h1>Wallet</h1></div>
       <div className={styles.assetGrid}>
           <h3> asset </h3>

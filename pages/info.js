@@ -32,7 +32,17 @@ export default function Info() {
           There are some user facing features planned for this site. Eventually users will be able to influence decisions made by the high-frequency trading algorithm directly and indirectly. Currently this feature 
           is testing via twitch. <br></br><br></br>
 
-          if you would like to get in touch about this project, reach out. I am always looking for feedback or help!
+          if you would like to get in touch about this project, reach out. I am always looking for feedback or help! <br></br><br></br>
+
+
+
+          new stuff coming:
+          <br>24/7 uptime</br>
+          <br>multi currency trading</br>
+          <br>more historical data + live analytics</br>
+          <br>improved trading strategy</br>
+
+
         </p>
 
         <div></div>
