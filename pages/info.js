@@ -18,7 +18,7 @@ export default function Info() {
           The development framework is pretty flexible so it can be pointed to a variety of crypto data feeds.<br></br> 
 
 
-          crypto trading fee = VIP market maker price + pay with exchange coin  <br></br><br></br> 
+          crypto trading fee = VIP market maker price + pay with exchange coin. <br></br>
 
 
           There are some user facing features planned for this site. Eventually users will be able to influence decisions made by the high-frequency trading algorithm.<br></br><br></br>
