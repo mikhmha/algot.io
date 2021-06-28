@@ -15,9 +15,6 @@ export default function Info() {
 
 
 
-
-          <br></br><br></br>
-          
           The development framework is pretty flexible so it can be pointed to a variety of crypto data feeds.<br></br> 
 
 
