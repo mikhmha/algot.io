@@ -31,7 +31,7 @@ export default function Info() {
           <br></br>more historical data + live analytics
           <br></br>improved trading strategy
           <br></br><br></br>
-          i know about tether. but trading stocks costs too much.
+
 
 
         </p>
