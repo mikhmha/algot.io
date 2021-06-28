@@ -12,18 +12,16 @@ export default function Info() {
 
         <p>
           This website provides live visualization of a high-frequency-trading algorithm I wrote in C++. <br></br>
+          <br></br><br></br>
+          
+          crypto trading fee = VIP market maker price + pay with exchange coin  <br></br><br></br> 
 
 
 
-          The development framework is pretty flexible so it can be pointed to a variety of crypto data feeds.<br></br> 
+  
+          There are some user facing features planned for this site. Eventually users will be able to influence decisions made by the high-frequency trading algorithm directly and indirectly. <br></br><br></br>
 
-
-          crypto trading fee = VIP market maker price + pay with exchange coin. <br></br>
-
-
-          There are some user facing features planned for this site. Eventually users will be able to influence decisions made by the high-frequency trading algorithm.<br></br><br></br>
-
-          if you would like to get in touch about this project please find my contact information at the github link below. <br></br><br></br>
+          If you are interested in this project, please find my contact info at the github link below. <br></br><br></br>
 
 
 
@@ -41,7 +39,7 @@ export default function Info() {
         <div></div>
         <h1>contact </h1>
   
-        <a href="https://github.com/mikhmha" style="color: #cc0000">github</a>
+        <a href="https://github.com/mikhmha">github</a>
 
         </div>
     )
