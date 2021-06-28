@@ -12,27 +12,21 @@ export default function Info() {
 
         <p>
           This website provides live visualization of a high-frequency-trading algorithm I wrote in C++. <br></br>
-          The algorithm runs on my local machine while also logging transactions asynchronously to the cloud. <br></br>
-          This website is currently testing so you may see data feeds being wiped occasionally. <br></br><br></br>
+
 
 
 
           <br></br><br></br>
           
-          Only cryptocurrencies are "traded" right now due to the high cost of obtaining real-time stock data. <br>
-          </br>The development framework is pretty flexible so it can be pointed to a variety of crypto data feeds.<br></br> 
-          If theres a cryptocurrency you would like to see traded send a suggestion! 
-          Maybe we can try trading it for a few days.<br></br><br></br>
+          The development framework is pretty flexible so it can be pointed to a variety of crypto data feeds.<br></br> 
+
 
           crypto trading fee = VIP market maker price + pay with exchange coin  <br></br><br></br> 
 
 
+          There are some user facing features planned for this site. Eventually users will be able to influence decisions made by the high-frequency trading algorithm.<br></br><br></br>
 
-  
-          There are some user facing features planned for this site. Eventually users will be able to influence decisions made by the high-frequency trading algorithm directly and indirectly. Currently this feature 
-          is testing via twitch. <br></br><br></br>
-
-          if you would like to get in touch about this project, reach out. I am always looking for feedback or help! <br></br><br></br>
+          if you would like to get in touch about this project please find my contact information at the github link below. <br></br><br></br>
 
 
 
@@ -50,7 +44,7 @@ export default function Info() {
         <div></div>
         <h1>contact </h1>
   
-        <a href="https://github.com/mikhmha/algot.io">github</a>
+        <a href="https://github.com/mikhmha" style="color: #cc0000">github</a>
 
         </div>
     )
